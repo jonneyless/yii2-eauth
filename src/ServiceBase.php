@@ -21,7 +21,7 @@ use OAuth\Common\Http\Client\ClientInterface;
  *
  * @package application.extensions.eauth
  */
-abstract class ServiceBase extends Object implements IAuthService
+abstract class ServiceBase extends BaseObject implements IAuthService
 {
 
 	/**
