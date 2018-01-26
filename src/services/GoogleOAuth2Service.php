@@ -117,20 +117,21 @@ class GoogleOAuth2Service extends Service
 		$this->attributes['id'] = $info['id'];
 		$this->attributes['name'] = $info['name'];
 
+		if (!empty($info['email'])) {
+			$this->attributes['email'] = $info['email'];
+		}
+
+		if (!empty($info['avater'])) {
+			$this->attributes['avater'] = $info['picture'];
+		}
+
+		if (!empty($info['hd'])) {
+			$this->attributes['domain'] = $info['hd'];
+		}
+
 		if (!empty($info['link'])) {
 			$this->attributes['url'] = $info['link'];
 		}
-
-		/*if (!empty($info['gender']))
-			$this->attributes['gender'] = $info['gender'] == 'male' ? 'M' : 'F';
-		
-		if (!empty($info['picture']))
-			$this->attributes['photo'] = $info['picture'];
-		
-		$info['given_name']; // first name
-		$info['family_name']; // last name
-		$info['birthday']; // format: 0000-00-00
-		$info['locale']; // format: en*/
 	}
 
 	/**
