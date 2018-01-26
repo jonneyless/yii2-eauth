@@ -19,7 +19,7 @@ use yii\helpers\Url;
  *
  * @package application.extensions.eauth
  */
-class EAuth extends Object
+class EAuth extends BaseObject
 {
 
 	/**
